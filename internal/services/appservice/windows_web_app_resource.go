@@ -44,7 +44,7 @@ type WindowsWebAppModel struct {
 	ClientCertExclusionPaths         string                      `tfschema:"client_certificate_exclusion_paths"`
 	Enabled                          bool                        `tfschema:"enabled"`
 	HttpsOnly                        bool                        `tfschema:"https_only"`
-	InboundIPAddress              	 string                      `tfschema:"inbound_ip_address"`
+	InboundIPAddress                 string                      `tfschema:"inbound_ip_address"`
 	KeyVaultReferenceIdentityID      string                      `tfschema:"key_vault_reference_identity_id"`
 	LogsConfig                       []helpers.LogsConfig        `tfschema:"logs"`
 	PublicNetworkAccess              bool                        `tfschema:"public_network_access_enabled"`

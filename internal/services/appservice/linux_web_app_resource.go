@@ -44,7 +44,7 @@ type LinuxWebAppModel struct {
 	ClientCertExclusionPaths         string                     `tfschema:"client_certificate_exclusion_paths"`
 	Enabled                          bool                       `tfschema:"enabled"`
 	HttpsOnly                        bool                       `tfschema:"https_only"`
-	InboundIPAddress              	 string                     `tfschema:"inbound_ip_address"`
+	InboundIPAddress                 string                     `tfschema:"inbound_ip_address"`
 	VirtualNetworkSubnetID           string                     `tfschema:"virtual_network_subnet_id"`
 	KeyVaultReferenceIdentityID      string                     `tfschema:"key_vault_reference_identity_id"`
 	LogsConfig                       []helpers.LogsConfig       `tfschema:"logs"`
@@ -231,7 +231,7 @@ func (r LinuxWebAppResource) Attributes() map[string]*pluginsdk.Schema {
 		"kind": {
 			Type:     pluginsdk.TypeString,
 			Computed: true,
-		},		
+		},
 
 		"outbound_ip_addresses": {
 			Type:     pluginsdk.TypeString,
@@ -258,7 +258,7 @@ func (r LinuxWebAppResource) Attributes() map[string]*pluginsdk.Schema {
 				Type: pluginsdk.TypeString,
 			},
 		},
-		
+
 		"possible_outbound_ip_addresses": {
 			Type:     pluginsdk.TypeString,
 			Computed: true,
